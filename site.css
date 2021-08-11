@@ -1,0 +1,247 @@
+/* * {
+    margin: 0px;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(236, 239, 241);
+}
+
+p{
+    margin: 0.5em 0 0.5m 0;
+}
+
+header {
+    display: block;
+    position: fixed;
+    padding: 10%;
+    padding-top: 5px;
+    padding-left: 0px;
+}
+
+nav a:visited, nav a:link {
+    color: azure;
+    text-decoration: none;
+}
+
+nav>ul{
+    display: inline;
+    padding: 0px;
+    padding-left: 5px;
+}
+
+nav>ul{
+    display: flex;
+    border: 1px solid red;
+}
+
+aside, img {
+    display: none;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,*::after, *::before{
+    box-sizing: border-box;
+
+
+}
+img{
+    max-width: 100%;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+:root{
+    font-size: 10px;
+
+}
+.navbar{
+    list-style: none;
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    font-size: 2rem;
+    margin: 0 0em 1.5em 0em ;
+    padding: 1.5em;
+    
+}
+
+.navbar a:link, .navbar a:visited{
+    color: rgb(82, 74, 74);
+ 
+}
+.navbar li{
+    margin-right: 1.5em;
+}
+.navbar li a{
+    text-decoration: none;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 74vh;
+    max-width: 1400px;
+    /* margin: 2em auto; */
+}
+
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+}
+.prod-name{
+    font-size: 1.8em;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+
+}
+.prod-price{
+    font-size: 1.8em;
+    width: 100%;
+    text-align: right;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 2em;
+    line-height: 1.5em;
+    
+}
+article{
+    font-family: 'Roboto', sans-serif;
+    padding: 2em;
+    width: 100%;
+}
+button{
+    padding: 0.5em 0.8em;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 2em;
+    border-radius: 100px;
+}
+
+.container-pie{
+    /* padding: 0.5em 0.7em; */
+    margin: 0 auto;
+    padding-top: 1.5em;
+    text-align: center;
+    height: 100%;
+}
+
+.artcle-body{
+    display: flex;
+}
+
+button:hover,button:focus{
+    opacity: 0.75;
+}
+
+aside{
+    text-align: center;
+    padding: 2em;
+}
+
+.navbar a:hover, .navbar a:focus{
+    opacity: 0.75;
+}
+
+
+@media only screen and (min-width: 768px){
+    main {
+        flex-direction: row;
+        /* justify-content: space-between; */
+        margin: 0 auto;
+        
+    }
+
+    aside{
+        width: 30%;
+        /* border: 1px solid red; */
+        
+    }
+    aside>img{
+        position: relative;
+        top: 10em;
+        /* left: 10em; */
+
+    }
+
+    article{
+        width: 50%;
+        /* border: 1px solid red; */
+    }
+
+    .container,.container-pie{
+        max-width: 800px;
+    }
+    .container-pie{
+        display: flex;
+        margin: 0 auto;
+        padding-top: 6em;
+
+    }
+
+
+    
+}
+
+/* Pies only */
+
+.pie{
+    width: 200px;
+    padding: 1em;
+    margin: 0 auto;
+    background-color: rgba(244, 249, 253, 0.959);
+    border: solid 1px #ccc;
+    text-align: center;
+}
+
+.artcle-body{
+    width: 100%;
+}
+
+.descr{
+    font-size: 1.5em;
+}
+
+/* Order page */
+
+.input-group input,
+.input-group textarea{
+    padding: 1em;
+    width: 100%;
+}
+
+label{
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container h1{
+    font-size: 3.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+input[type="reset"]{
+    background: transparent;
+    cursor: pointer;
+    border: 0;
+}
+
+input[type="submit"]{
+    border: 1px solid ;
+}
