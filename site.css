@@ -130,6 +130,8 @@ button{
     margin: 0 auto;
     font-size: 2em;
     border-radius: 100px;
+    cursor: pointer;
+    
 }
 
 .container-pie{
@@ -193,6 +195,18 @@ aside{
 
     }
 
+    .input-group {
+        margin: 0 2em 0.5em 0;
+        padding: 0 10em 0;
+    }
+   
+    input[type="reset"]{
+        margin-left: 10em;
+    }
+    input[type="submit"]{
+    margin-left: 10em;
+    /* width: 100%; */
+    }
 
     
 }
@@ -243,5 +257,11 @@ input[type="reset"]{
 }
 
 input[type="submit"]{
-    border: 1px solid ;
+    font-size: 1.5em;
+    margin: 2em 2em;
+    border: none ;
+    padding: 0.5em 1em;
+    background-color:#f8edeb ;
+    border-radius: 15px;
+    cursor: pointer;
 }

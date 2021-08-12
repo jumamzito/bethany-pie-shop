@@ -27,7 +27,7 @@
             <h1>Welcome to Bethany's Pie Shop</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum porro modi amet expedita reiciendis atque 
             ea suscipit quasi quaerat iusto, voluptatibus cum nulla officiis, sed a dolor exercitationem placeat quidem! </p>
-            <button>Check out</button>
+            <button id="checkout">Check out</button>
         </article>
     </main>
     <footer>
@@ -38,4 +38,9 @@
         </ul>
     </footer>
 </body>
+<script>
+    document.getElementById("checkout").addEventListener("click", function() {
+        location.href = "pies.html"
+    });
+</script>
 </html>

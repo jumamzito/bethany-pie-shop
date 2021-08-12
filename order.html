@@ -23,7 +23,20 @@
     <main>
         <aside><img src="images/logo.png" alt="Bethany's Pie Shop" srcset=""></aside>
         <article class="container">
+            
             <h1>Order</h1>
+
+            <div class="pie">
+                <img src="" />
+                <div class="columns">
+                    <div class="prod-name"></div>
+                    <div class="prod-price"></div>
+                </div>
+                <div class="descr"></div>
+            </div>
+
+            <form action="http://localhost:7071/api/post" method="post">
+
             <div class="input-group">
                 <div><label for="first-name">First Name</label></div>
                 <div><input type="text" name="first-name" id="first-name"/></div>
@@ -53,6 +66,7 @@
 
             <input type="reset" value="Reset"/>
             <input type="submit" value="Order">
+            </form>
 
         </article>
     </main>
@@ -64,4 +78,28 @@
         </ul>
     </footer>
 </body>
+<script>
+    window.addEventListener("DOMContentLoaded", function(e){
+        const order = localStorage.getItem("order");
+
+        if(order) {
+            const pieOrder = JSON.parse(order);
+
+            const pie = document.querySelector(".pie");
+
+            const title = pie.querySelector(".prod-name");
+            const price = pie.querySelector(".prod-price");
+            const desc = pie.querySelector(".descr");
+
+            title.innerText = pieOrder.title;
+            price.innerText = pieOrder.price;
+            desc.innerText = pieOrder.desc;
+
+            const img = pie.querySelector("img");
+            img.setAttribute("src", `images/${pieOrder.id}.png`);
+            img.setAttribute("alt",pieOrder.title);
+
+        }
+    });
+</script>
 </html>
